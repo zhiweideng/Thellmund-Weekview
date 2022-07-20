@@ -26,6 +26,13 @@
             app:showAsAction="never" />
 
         <item
+            android:id="@+id/action_five_day_view"
+            android:checked="true"
+            android:orderInCategory="200"
+            android:title="@string/action_five_day_view"
+            app:showAsAction="never" />
+
+        <item
             android:id="@+id/action_week_view"
             android:orderInCategory="300"
             android:title="@string/action_week_view"

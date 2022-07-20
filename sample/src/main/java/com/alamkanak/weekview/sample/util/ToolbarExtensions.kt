@@ -12,6 +12,7 @@ import java.time.LocalDateTime
 private enum class WeekViewType(val value: Int) {
     DayView(1),
     ThreeDayView(3),
+    FiveDayView(5),
     WeekView(7);
 
     companion object {
@@ -58,6 +59,7 @@ private fun MenuItem.mapToWeekViewType(): WeekViewType {
     return when (itemId) {
         R.id.action_day_view -> WeekViewType.DayView
         R.id.action_three_day_view -> WeekViewType.ThreeDayView
+        R.id.action_five_day_view -> WeekViewType.FiveDayView
         R.id.action_week_view -> WeekViewType.WeekView
         else -> throw IllegalArgumentException("Invalid menu item ID $itemId")
     }
