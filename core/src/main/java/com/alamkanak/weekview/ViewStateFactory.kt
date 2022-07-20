@@ -3,6 +3,7 @@ package com.alamkanak.weekview
 import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.Color
+import android.graphics.DashPathEffect
 import android.graphics.Paint
 import android.graphics.Typeface
 import android.os.Build
@@ -73,6 +74,13 @@ internal object ViewStateFactory {
         viewState.hourSeparatorPaint.apply {
             color = a.getColor(R.styleable.WeekView_hourSeparatorColor, context.lineColor)
             strokeWidth = a.getDimension(R.styleable.WeekView_hourSeparatorStrokeWidth, context.dp(1))
+        }
+
+        viewState.hourDashPathSeparatorPaint.apply {
+            color = a.getColor(R.styleable.WeekView_hourSeparatorColor, context.lineColor)
+            strokeWidth = a.getDimension(R.styleable.WeekView_hourSeparatorStrokeWidth, context.dp(1))
+            val dashPathWidth = a.getDimension(R.styleable.WeekView_hourDashPathSeparatorStrokeWidth, context.dp(4))
+            pathEffect = DashPathEffect(floatArrayOf(dashPathWidth, dashPathWidth / 2), 0f)
         }
 
         viewState.daySeparatorPaint.apply {

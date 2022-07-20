@@ -159,6 +159,10 @@ internal class ViewState {
         style = Paint.Style.STROKE
     }
 
+    val hourDashPathSeparatorPaint = Paint().apply {
+        style = Paint.Style.STROKE
+    }
+
     val daySeparatorPaint = Paint().apply {
         style = Paint.Style.STROKE
     }

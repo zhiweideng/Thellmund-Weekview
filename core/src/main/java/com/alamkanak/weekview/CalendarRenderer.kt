@@ -210,6 +210,13 @@ private class BackgroundGridDrawer(
             endX = viewState.viewWidth.toFloat(),
             paint = viewState.hourSeparatorPaint
         )
+
+        drawHorizontalDashPathLine(
+            verticalOffset = verticalOffset + viewState.hourHeight / 2,
+            startX = horizontalOffset,
+            endX = viewState.viewWidth.toFloat(),
+            paint = viewState.hourDashPathSeparatorPaint
+        )
     }
 }
 

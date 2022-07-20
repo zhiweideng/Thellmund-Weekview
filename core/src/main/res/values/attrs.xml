@@ -97,6 +97,7 @@
         <attr name="showHourSeparator" format="boolean" />
         <attr name="hourSeparatorColor" format="color" />
         <attr name="hourSeparatorStrokeWidth" format="dimension" />
+        <attr name="hourDashPathSeparatorStrokeWidth" format="dimension" />
 
         <!-- Day separators -->
         <attr name="showDaySeparator" format="boolean" />

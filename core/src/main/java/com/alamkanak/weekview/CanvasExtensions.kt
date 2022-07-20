@@ -34,6 +34,15 @@ internal fun Canvas.drawHorizontalLine(
     drawLine(startX, verticalOffset, endX, verticalOffset, paint)
 }
 
+internal fun Canvas.drawHorizontalDashPathLine(
+    verticalOffset: Float,
+    startX: Float,
+    endX: Float,
+    paint: Paint
+) {
+    drawLine(startX, verticalOffset, endX, verticalOffset, paint)
+}
+
 internal fun Canvas.drawInBounds(
     bounds: RectF,
     block: Canvas.() -> Unit
